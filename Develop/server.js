@@ -18,8 +18,26 @@ app.get('/notes', (req, res) =>
 )
 
 app.get('/api/notes', (req, res ) => 
-    res.sendFile(path.join(__dirname, '/db/db.json'))
+    res.sendFile(path.join(__dirname, './db/db.json'))
 )
 
+app.post('/api/notes', (req, res) => { 
+    var createNotes = req.body;
+    var storedNotes = JSON.parse(fs.readFileSync('./db/db.json'))
+    var totalNotes = (storedNotes.length).toString()
+
+    createNotes.id = totalNotes
+
+    storedNotes.push(createNotes)
+
+    fs.writeFileSync('./db/db.json', JSON.stringify(storedNotes))
+    res.json(storedNotes)
+
+})
 
 
+
+
+app.listen(PORT, () =>
+  console.log(`App listening at http://localhost:${PORT} 🚀`)
+);
