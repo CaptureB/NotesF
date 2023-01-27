@@ -20,7 +20,8 @@ The user will download the application that will run in the backend using expres
 
 ## Usage
 The application is used to store important notes.
-![Alt text](../../Note%20taker.app.JPG)
+![Note taker app](https://user-images.githubusercontent.com/114364879/214982662-d5b952dd-597f-49b8-bad6-ed95728adae5.JPG)
+
 
 ## License
 None
