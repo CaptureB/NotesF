@@ -32,10 +32,13 @@ None
 ## Tests
 The user can test this application by running the node server.js. The user will then run node server.js. The user will now if the application is running with a message in the terminal and a image of a rocketship.
 
+This application is deployed using Heroku.This is the database that will show when the user runs the program.
+
+
 ## Questions
 
 
 ## GitHub 
-
+CaptureB
 
 ## Email
